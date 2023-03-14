@@ -1,0 +1,36 @@
+.table-wrap {
+  background-color: #fff;
+  margin-top: 12px;
+  padding: 20px;
+  .button-wrap {
+    margin-bottom: 12px;
+    button {
+      margin-right: 8px;
+    }
+  }
+  :global {
+    .action-wrap {
+      a {
+        margin-right: 12px;
+        display: inline-block;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+    .cmp-alert-info {
+      margin-bottom: 12px;
+      font-size: 12px;
+      .anticon-info-circle {
+        color: var(--primary-color, #0077ff);
+        margin-right: 4px;
+      }
+      a {
+        margin-right: 16px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.modal-wrap {
+  :global {
+    .settle-modal-body {
+      padding: 0;
+      .settle-spin-nested-loading > div > .settle-spin {
+        max-height: calc(100% - 60px);
+      }
+    }
+    .settle-modal-footer {
+      padding: 13.5px 16px;
+    }
+  }
+}
+.body-wrap {
+  min-height: 144px;
+  // max-height: 360px;
+  overflow-y: auto;
+  padding: 24px;
+}
+.button-wrap {
+  padding: 13.5px 24px;
+  text-align: right;
+  border-top: 1px solid #e8e8e8;
+  button + button {
+    margin-left: 8px;
+  }
+}

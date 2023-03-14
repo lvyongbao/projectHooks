@@ -1,0 +1,132 @@
+@import "./basis.less";
+@import "./color.less";
+:global {
+  #root {
+    height: 100%;
+  }
+  label {
+    cursor: text;
+  }
+  .popoverTable {
+    max-height: 216px;
+    overflow-y: auto;
+    .settle-table-thead > tr > th {
+      padding: 6.5px 8px;
+    }
+    .settle-table-tbody > tr > td {
+      padding: 6.5px 8px;
+    }
+  }
+  // 单行省略
+  .oneOverflow {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  // 多行省略
+  .moreOverflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    cursor: pointer;
+  }
+
+  // 详情标题
+  .detailTitle {
+    &::before {
+      content: "";
+      font-size: 0px;
+      display: inline-block;
+      width: 2px;
+      height: 14px;
+      background-color: #0077ff;
+      margin-right: 8px;
+    }
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  // treeSelect
+  .settle-select {
+    vertical-align: middle;
+    margin-top: -5px;
+    .settle-select-selection.settle-select-selection--multiple {
+      max-height: 200px;
+      overflow-y: auto;
+    }
+  }
+  .settle-pagination {
+    line-height: 30px;
+  }
+}
+
+// 全局设置tablepadding
+// .settle-table-thead > tr > th,
+// .settle-table-tbody > tr > td {
+//   padding: 14px 12px !important;
+// }
+
+// .settle-menu-sub .settle-menu-sub > .settle-menu-item {
+//   padding-left: 62px !important;
+// }
+
+// .settle-menu-root {
+//   padding-top: 12px !important;
+// }
+
+// .settle-menu-sub.settle-menu-inline > .settle-menu-item,
+// .settle-menu-sub.settle-menu-inline > .settle-menu-submenu > .settle-menu-submenu-title {
+//   height: 40px !important;
+//   line-height: 40px !important;
+// }
+// .settle-menu-inline .settle-menu-item:not(:last-child) {
+//   margin-bottom: 4px !important;
+// }
+// .settle-tooltip-inner {
+//   background-color: #444 !important;
+// }
+// .settle-tabs-nav .settle-tabs-tab {
+//   height: 48px !important;
+// }
+// .settle-tabs-nav .settle-tabs-tab-active {
+//   font-weight: 600 !important;
+// }
+// .settle-tabs-nav-container {
+//   font-size: 14px !important;
+//   line-height: 24px !important;
+// }
+// .settle-table-thead > tr > th {
+//   font-weight: 600 !important;
+//   color: #333333 !important;
+// }
+// .settle-btn-primary,
+// .settle-btn {
+//   box-shadow: unset !important;
+// }
+// .settle-form-item-label > label {
+//   color: #666666 !important;
+// }
+// .settle-select-selection {
+//   border-top-width: 1px !important;
+// }
+// .settle-dropdown-menu-item {
+//   color: #666666 !important;
+// }
+// .settle-menu,
+// .settle-menu-inline,
+// .settle-menu-vertical,
+// .settle-menu-vertical-left {
+//   border-right: 1px solid red;
+// }
+// .settle-popover-inner-content {
+//   max-width: 300px;
+//   word-break: break-all;
+// }

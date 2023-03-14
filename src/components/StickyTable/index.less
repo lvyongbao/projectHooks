@@ -1,0 +1,70 @@
+@import "~antd/lib/style/themes/index";
+
+@sticky-prefix: ~"@{ant-prefix}";
+:global {
+  .sticky-table {
+    .settle-table-header{
+      background: transparent;
+      // overflow:auto!important;
+      &::-webkit-scrollbar{
+        border-bottom: none!important;
+      }
+      &-column{
+        .settle-table-column-title{
+          color: #222222;
+          font-weight: 500;
+        }
+      }
+    }
+    .sticky-fixed-main {
+      position: fixed;
+      z-index: 2;
+    }
+
+    .sticky-fixed-left {
+      position: fixed;
+      z-index: 3;
+      // box-shadow: 6px 0 6px -4px rgba(0, 0, 0, 0.15);
+      // 阴影不能加，加了之后，滚动到下面没有阴影时判断不了；样式也很奇怪
+    }
+    .sticky-fixed-right {
+      position: fixed;
+      z-index: 3;
+      padding-left: 7px;
+      // box-shadow: -6px 0 6px -4px rgba(0, 0, 0, 0.15);
+    }
+
+    .@{sticky-prefix}-table-fixed-left,
+    .@{sticky-prefix}-table-fixed-right {
+      z-index: auto;
+      .@{sticky-prefix}-table-body-outer{
+        margin-right:-7px;
+        td{
+          a:last-of-type{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .@{sticky-prefix}-table-placeholder {
+      border-top: none;
+    }
+
+    .@{sticky-prefix}-table-default {
+      .@{sticky-prefix}-table-scroll .@{sticky-prefix}-table-header {
+        scrollbar-color: #d9d9d9 white !important;
+        overflow-y: hidden !important;
+      }
+
+      .@{sticky-prefix}-table-body {
+        margin-top: 0px;
+        scrollbar-width: none !important;
+        &::-webkit-scrollbar {
+          height: 0;
+          width: 0;
+        }
+      }
+    }
+  }
+}

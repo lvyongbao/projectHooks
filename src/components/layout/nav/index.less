@@ -1,0 +1,32 @@
+.self-sider {
+  .self-nav {
+    margin-top: 8px;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: none !important;
+    user-select: none;
+    :global {
+      .settle-menu-item,
+      .settle-menu-submenu-title {
+        width: 100%;
+        .anticon {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  :global {
+    .settle-layout-sider-trigger {
+      text-align: left;
+      padding-left: 31px;
+      .anticon {
+        font-size: 14px;
+        &:hover {
+          color: #0077FF;
+        }
+      }
+    }
+  }
+}

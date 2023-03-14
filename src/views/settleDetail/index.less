@@ -1,0 +1,198 @@
+.public-search {
+  background-color: #fff;
+  padding: 16px;
+
+  :global {
+    .settle-form-item {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      margin-bottom: 8px;
+
+      .settle-form-item-label {
+        width: 100px;
+        flex: 0 0 100px;
+        white-space: normal;
+        word-break: break-all;
+        // line-height: 32px;
+        border-radius: 2px 0 0 2px;
+
+        label {
+          width: 100px;
+
+          .settle-form-item-no-colon .settle-dropdown-trigger {
+            display: inline-block;
+            // line-height: 30px;
+          }
+        }
+      }
+
+      .settle-form-item-control-wrapper {
+        flex: 1 1;
+        width: 0;
+      }
+
+      .settle-form-explain {
+        position: absolute;
+      }
+    }
+  }
+}
+
+.public-btn-list {
+  .public-btn-list-small-single();
+}
+
+// 主次按钮一对，左侧次按钮加上右边距
+.public-btn-list-small {
+  .public-btn-list-small-single();
+  & button:first-child {
+    margin-right: 12px;
+  }
+}
+
+// 只有1个主按钮时
+.public-btn-list-small-single {
+  // float: right;
+  flex: 1 1;
+  text-align: right;
+  padding-top: 4px;
+  margin-right: 8px;
+  // margin-bottom: 8px;
+}
+
+.public-tabs {
+  background: #ffffff;
+
+  :global {
+    .settle-tabs-bar {
+      margin-bottom: 0px;
+    }
+
+    .settle-tabs-nav {
+      font-size: 14px;
+
+      // 全局样式已修改
+      .settle-tabs-tab-active {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.public-info {
+  // 全局样式已修改
+  // border-radius: 2px;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #333;
+  background-color: #ebf5ff;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #b2d6ff;
+  box-sizing: border-box;
+
+  .left {
+    display: flex;
+    align-items: center;
+
+    .icon {
+      font-size: 14px;
+      color: #07f;
+      margin-right: 8px;
+    }
+
+    .data {
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      color: #fd6e0d;
+      letter-spacing: 0;
+      // font-weight: 600;
+    }
+
+    .number-text {
+      .inner-text {
+        margin-left: 24px;
+
+        .data {
+          .data;
+        }
+      }
+    }
+  }
+
+  .cancel {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #0077ff;
+    letter-spacing: 0;
+    cursor: pointer;
+  }
+
+  :global {
+    .icon {
+      color: #07f;
+      font-size: 14px;
+      margin-right: 8px;
+    }
+  }
+}
+
+// 侧边贴近的border变化
+.special-border-radius {
+  :global {
+    .settle-input {
+      border-radius: 0 2px 2px 0;
+    }
+
+    .settle-calendar-picker-input.settle-input {
+      border-radius: 0 2px 2px 0;
+    }
+  }
+}
+
+// 共用表格外层包裹布局
+.public-table-box {
+  background: #fff;
+  margin-top: 12px;
+  padding: 20px;
+}
+
+// 单行省略
+.oneOverflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  cursor: pointer;
+}
+
+// 多行省略
+.moreOverflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  cursor: pointer;
+}
+
+.moreOverflow {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+:global { 
+  #settleDetail {
+    .settle-table-tbody > tr > td {
+      vertical-align: top;
+    }
+  }
+}
+

@@ -1,0 +1,88 @@
+.detail {
+  min-height: 100%;
+  background-color: #ffffff;
+  padding: 8px 24px;
+}
+.range {
+  margin-top: 4px;
+  margin-bottom: 16px;
+  :global {
+    i {
+      margin-right: 2px;
+    }
+  }
+}
+.tishi {
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 20px;
+  font-weight: 400;
+}
+.modalTable {
+  :global {
+    // .settle-input-number,
+    // .settle-input-number-disabled {
+    //   padding: 0px 12px;
+    //   border: none;
+    //   outline: none;
+    //   box-shadow: none;
+    //   width: 100%;
+    //   height: auto;
+    //   .settle-input-number-handler-wrap {
+    //     display: none;
+    //   }
+    //   .settle-input-number-input-wrap {
+    //     input {
+    //       padding: 0px;
+    //       height: 35px;
+    //     }
+    //   }
+    // }
+    .settle-table-thead {
+      tr {
+        // height: 36px;
+        th {
+          padding: 8.5px 12px;
+        }
+      }
+    }
+    .settle-table-tbody {
+      tr {
+        &:hover {
+          td {
+            background: #ffffff !important;
+          }
+        }
+
+        td {
+          padding: 0px;
+          input {
+            padding: 0px 12px;
+            height: 35px;
+            border: none;
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+    .settle-table-placeholder {
+      padding: 8px 12px;
+    }
+  }
+}
+.modalTypeValue {
+  margin-top: -5px;
+  margin-bottom: 8px;
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 2px;
+  padding: 12px;
+  max-height: 240px;
+  overflow-y: auto;
+  :global {
+    .settle-table-thead > tr > th,
+    .settle-table-tbody > tr > td {
+      padding: 6.5px 12px;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+// 功能性 .f-
+:global {
+  /* reset */
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend, keygen, table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,
+  time, mark, audio, video, input, textarea, select, button { margin:0; padding:0; border:none; border:0; outline:0; font-size:100%; font:inherit; vertical-align:baseline;font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;}
+  html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 { -webkit-text-size-adjust:none; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;}
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block;}
+  ol, ul { list-style:none;}
+  sup, sub {font-size:83%;}
+  blockquote, q { quotes:none;}
+  blockquote:before, blockquote:after, q:before, q:after { content:''; content:none;}
+  del { text-decoration:line-through;}
+  ins, u, s, a, a:hover { text-decoration:none;}
+  pre, code, kbd, samp { font-family:inherit;}
+  em, i, cite, var, address, dfn { font-style:normal;}
+  h1, h2, h3, h4, h5, h6, strong, b { font-weight:normal;}
+  html, body, fieldset, img, iframe, abbr { border:0;}
+  table { border-collapse:collapse; border-spacing:0;}
+  caption, th { text-align:left; font-weight:normal;}
+  textarea{ overflow:auto; resize:none!important;}
+  label, summary { cursor:default;}
+  a, button, label { cursor:pointer;}
+  textarea, input ,button, select { -webkit-appearance:none; border-radius:0;}
+  input[type=radio] { -webkit-appearance:radio; border-radius:100%;}
+  input[type=checkbox] { -webkit-appearance:checkbox;}
+  textarea, input { box-sizing:content-box;}
+  body, textarea, input, button, select, keygen, legend { font:12px,helvetica,sans-serif; color:#666;}
+  html { _background-image:url(about:blank); _background-attachment:fixed;}
+  ::-ms-clear, ::-ms-reveal{ display:none;}
+  html,body {height: 100%;background-color:#e2e2e2;font-size: 14px;}
+  /*滚动条样式*/
+  ::-webkit-scrollbar-thumb {border-radius: 10px;background-color: #ccc;}
+  ::-webkit-scrollbar {width: 7px;height: 7px;background-color: #f2f2f2;} 
+  /* 清除IE输入框小眼睛和叉叉 */
+  ::-ms-clear,::-ms-reveal { display:none;}
+  /*清除浏览器自动填充背景色*/
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+  }
+  // 超出省略
+  .fac-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  // 超出一行省略
+  .fac-one-ellipsis {
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+  }
+  // 超出两行省略
+  .fac-two-ellipsis {
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  .f-dn { display:none;}
+  .f-db { display:block;}
+  .f-di { display:inline;}
+  .f-fl { float:left; display:inline;}
+  .f-fr { float:right; display:inline;}
+  .f-fn { float:none;}
+  .f-pr { position:relative;}
+  .f-pa { position:absolute;}
+  .f-oh { overflow:hidden;}
+  .f-dib { display: inline-block;}
+  .f-fs12 { font-size:12px;}
+  .f-fs14 { font-size:14px;}
+  .f-fwb { font-weight:bold;}
+  .f-tal { text-align:left;}
+  .f-tac { text-align:center;}
+  .f-tar { text-align:right;}
+  .f-vam { vertical-align:middle;}
+  .f-vat { vertical-align:top;}
+  .f-wsn { word-wrap:normal; white-space:nowrap;}
+  .f-toe { text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+  .f-ti { overflow:hidden; text-indent:-999em;}
+  .f-ti2 { text-indent:2em;}
+  .f-cp { cursor:pointer;}
+  .f-nus { -webkit-user-select:none; -ms-user-select:none; user-select:none;}
+  .f-clear { overflow:hidden; display:block; clear:both; height:0;}
+  .f-clearfix:before, .f-clearfix:after { content:''; display:table;}
+  .f-clearfix:after { clear:both;}
+  .f-clearfix,.f-zm { *zoom:1;}
+  .e-mt0 { margin-top:0px;}
+  .e-mt5 { margin-top:5px;}
+  .e-mt10 { margin-top:10px;}
+  .e-mt12 { margin-top: 12px;}
+  .e-mt15 { margin-top:15px;}
+  .e-mt20 { margin-top:20px;}
+  .e-mr0 { margin-right:0px;}
+  .e-mr5 { margin-right:5px;}
+  .e-mr10 { margin-right:10px;}
+  .e-mr15 { margin-right:15px;}
+  .e-mr20 { margin-right:20px;}
+  .e-mb0 { margin-bottom:0px;}
+  .e-mb5 { margin-bottom:5px;}
+  .e-mb10 { margin-bottom:10px;}
+  .e-mb15 { margin-bottom:15px;}
+  .e-mb20 { margin-bottom:20px;}
+  .e-ml0 { margin-left:0px;}
+  .e-ml5 { margin-left:5px;}
+  .e-ml10 { margin-left:10px;}
+  .e-ml15 { margin-left:15px;}
+  .e-ml20 { margin-left:20px;}
+  .e-ml30 { margin-left:30px;}
+  .e-pt0 { padding-top:0px;}
+  .e-pt5 { padding-top:5px;}
+  .e-pt10 { padding-top:10px;}
+  .e-pt15 { padding-top:15px;}
+  .e-pt20 { padding-top:20px;}
+  .e-pr0 { padding-right:0px;}
+  .e-pr10 { padding-right:10px;}
+  .e-pr15 { padding-right:15px;}
+  .e-pr20 { padding-right:20px;}
+  .e-pr24 { padding-right:24px;}
+  .e-pb0 { padding-bottom:0px;}
+  .e-pb10 { padding-bottom:10px;}
+  .e-pb15 { padding-bottom:15px;}
+  .e-pb20 { padding-bottom:20px;}
+  .e-pl0 { padding-left:0px;}
+  .e-pl10 { padding-left:10px;}
+  .e-pl15 { padding-left:15px;}
+  .e-pl20 { padding-left:20px;}
+  .e-pl30 { padding-left:30px;}
+}

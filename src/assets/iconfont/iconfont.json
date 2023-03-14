@@ -1,0 +1,86 @@
+{
+  "id": "3634699",
+  "name": "结算系统",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "32078048",
+      "name": "结算订单",
+      "font_class": "jiesuandingdan",
+      "unicode": "f38f",
+      "unicode_decimal": 62351
+    },
+    {
+      "icon_id": "32078049",
+      "name": "结算对象",
+      "font_class": "jiesuanduixiang",
+      "unicode": "f390",
+      "unicode_decimal": 62352
+    },
+    {
+      "icon_id": "32078050",
+      "name": "结算明细",
+      "font_class": "jiesuanmingxi",
+      "unicode": "f391",
+      "unicode_decimal": 62353
+    },
+    {
+      "icon_id": "32078051",
+      "name": "企业",
+      "font_class": "qiye",
+      "unicode": "f392",
+      "unicode_decimal": 62354
+    },
+    {
+      "icon_id": "32078052",
+      "name": "结算规则",
+      "font_class": "jiesuanguize",
+      "unicode": "f393",
+      "unicode_decimal": 62355
+    },
+    {
+      "icon_id": "26375747",
+      "name": "箭头右",
+      "font_class": "jiantouyou",
+      "unicode": "f2a1",
+      "unicode_decimal": 62113
+    },
+    {
+      "icon_id": "26375748",
+      "name": "箭头上",
+      "font_class": "jiantoushang",
+      "unicode": "f2a2",
+      "unicode_decimal": 62114
+    },
+    {
+      "icon_id": "26375750",
+      "name": "箭头下",
+      "font_class": "jiantouxia",
+      "unicode": "f2a3",
+      "unicode_decimal": 62115
+    },
+    {
+      "icon_id": "26375752",
+      "name": "箭头左",
+      "font_class": "jiantouzuo",
+      "unicode": "f2a4",
+      "unicode_decimal": 62116
+    },
+    {
+      "icon_id": "26669709",
+      "name": "收起菜单",
+      "font_class": "shouqicaidan",
+      "unicode": "f2b4",
+      "unicode_decimal": 62132
+    },
+    {
+      "icon_id": "26669710",
+      "name": "展开菜单",
+      "font_class": "zhankaicaidan",
+      "unicode": "f2b5",
+      "unicode_decimal": 62133
+    }
+  ]
+}

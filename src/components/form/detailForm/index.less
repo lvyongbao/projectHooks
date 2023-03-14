@@ -1,0 +1,74 @@
+.detailForm {
+  position: relative;
+  background: #ffffff;
+  padding-bottom: 10px;
+  padding: 16px 16px 0px;
+  &:empty {
+    display: none;
+  }
+
+  &.no-tabs {
+    padding-top: 16px;
+  }
+
+  &-from {
+    &:after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+
+    :global {
+      .settle-form-item {
+        display: flex;
+        flex-direction: row;
+        padding: 12px 0;
+        margin-right: 0;
+
+        .settle-form-item-label {
+          width: 100px;
+          flex: 0 0 100px;
+        }
+        .settle-form-item-control-wrapper {
+          flex: 1 1;
+          width: 0;
+          .settle-form-explain {
+            position: absolute;
+            bottom: -15px;
+          }
+        }
+        &.settle-form-item-with-help {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+
+  &-buttons {
+    // float: right;
+    // margin: 4px 0;
+    // flex: 1 1;
+    text-align: center;
+    padding: 12px 0;
+    // padding-bottom: 10px;
+    button {
+      margin-left: 12px;
+    }
+  }
+}
+
+.modalTypeValue {
+  margin-top: -5px;
+  margin-bottom: 8px;
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 2px;
+  padding: 12px;
+  max-height: 240px;
+  overflow-y: auto;
+  :global {
+    .settle-table-thead > tr > th,
+    .settle-table-tbody > tr > td {
+      padding: 6.5px 12px;
+    }
+  }
+}
