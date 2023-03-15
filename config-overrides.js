@@ -24,9 +24,6 @@ const removeSassLoader = config => {
 
 module.exports = {
   webpack: override(webpackconfig => {
-    // webpackconfig.output.library = `nuoyanJiesuanMirco`;
-    // webpackconfig.output.libraryTarget = 'umd';
-    // webpackconfig.output.jsonpFunction = `webpackJsonp_nuoyanJiesuanMirco`;
     webpackconfig.output.globalObject = 'window';
     webpackconfig.output.publicPath = process.env.NODE_ENV === 'development' ? '/' : '/micro/settlement/';
     return webpackconfig;

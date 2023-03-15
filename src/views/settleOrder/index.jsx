@@ -16,9 +16,6 @@ const SettleOrder = () => {
   const dispatch = useDispatch();
   const itemForm = useRef();
   const [loading, setLoading] = useState(false);
-  // const [preview, setPreview] = useState(false);
-  // const [modalVisible, setModalVisible] = useState(false);
-  // const userInfo = useSelector((state) => state.global.userInfo);
   const {
     businessTypeList,
     serviceOptions,

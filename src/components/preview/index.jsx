@@ -1,9 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import Modal from '@/components/Modal';
-import { getSVGDoms } from '@nuo-common/ofd';
-import { downloadFile } from '@/utils'; // 目前不用
+import { downloadFile } from '@/utils';
 import { viewFile } from './service';
-// import Style from "./index.module.less"; 目前不用
 
 /**
  *@param visible 显示弹窗
@@ -21,10 +19,6 @@ const Index = ({ visible, onClose, previewData }) => {
       (async function () {
         setLoading(true);
         const res = await viewFile(previewData);
-        getSVGDoms({
-          ofd: window.URL.createObjectURL(new Blob([res.data])),
-          id: 'texts',
-        });
         setLoading(false);
       })();
     }
